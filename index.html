@@ -1,16 +1,3 @@
-<?php
-// Gatilho para enviar e-mail ao acessar a página
-$to = 'rogerio_m.l@hotmail.com';
-$subject = 'Novo acesso ao site RMTech Solutions';
-$date = date('d/m/Y H:i:s');
-$user_ip = $_SERVER['REMOTE_ADDR'];
-$user_agent = $_SERVER['HTTP_USER_AGENT'];
-$message = "Um novo cliente acessou a página em $date.\nIP: $user_ip\nNavegador: $user_agent";
-$headers = "From: http://localhost:8000\r\nReply-To: http://localhost:8000\r\n";
-
-// Envia o e-mail (suprime erros para não exibir ao usuário)
-@mail($to, $subject, $message, $headers);
-?>
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
@@ -108,5 +95,18 @@ $headers = "From: http://localhost:8000\r\nReply-To: http://localhost:8000\r\n";
     <footer>
         <p>&copy; 2025 RMTech Solutions. Todos os direitos reservados.</p>
     </footer>
+    <?php
+        // Gatilho para enviar e-mail ao acessar a página
+        $to = 'rogerio_m.l@hotmail.com';
+        $subject = 'Novo acesso ao site RMTech Solutions';
+        $date = date('d/m/Y H:i:s');
+        $user_ip = $_SERVER['REMOTE_ADDR'];
+        $user_agent = $_SERVER['HTTP_USER_AGENT'];
+        $message = "Um novo cliente acessou a página em $date.\nIP: $user_ip\nNavegador: $user_agent";
+        $headers = "From: http://localhost:8000\r\nReply-To: http://localhost:8000\r\n";
+        
+        // Envia o e-mail (suprime erros para não exibir ao usuário)
+        @mail($to, $subject, $message, $headers);
+    ?>
 </body>
 </html>
