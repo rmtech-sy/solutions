@@ -1,0 +1,226 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&display=swap');
+
+body {
+    font-family: 'Orbitron', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #0f2027 0%, #2c5364 100%);
+    color: #e0eafc;
+    display: flex;
+    flex-direction: column;
+    letter-spacing: 1px;
+}
+
+header {
+    background: rgba(20, 30, 48, 0.95);
+    color: #00ffe7;
+    padding: 2.5rem 0 1.5rem 0;
+    box-shadow: 0 4px 32px #00ffe733, 0 1.5px 0 #00ffe7 inset;
+    text-align: center;
+    border-bottom: 2px solid #00ffe7;
+    margin-top: 0;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    text-shadow: 0 0 16px #00ffe7, 0 2px 8px #1a2980;
+    margin: 0;
+    letter-spacing: 2px;
+}
+
+.main-navbar {
+    width: 100%;
+    background: rgba(20, 30, 48, 0.98);
+    z-index: 1000;
+    box-shadow: 0 2px 16px #00ffe733;
+    border-bottom: 2px solid #00ffe7;
+    margin-bottom: 30px;
+}
+
+.main-navbar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0.5rem 0;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.main-navbar li {
+    display: inline;
+}
+
+.main-navbar a {
+    color: #00ffe7;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1rem;
+    letter-spacing: 1px;
+    transition: color 0.2s;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+}
+
+.main-navbar a:hover,
+.main-navbar a:focus {
+    color: #fff;
+    background: #00ffe7;
+    text-shadow: 0 0 8px #00ffe7;
+    outline: none;
+}
+
+main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2.5rem 1rem;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.company-sectors {
+    background: rgba(44, 83, 100, 0.85);
+    border: 1.5px solid #00ffe7;
+    border-radius: 18px;
+    box-shadow: 0 0 24px #00ffe755, 0 2px 8px #1a2980;
+    padding: 2rem 2.5rem;
+    margin-bottom: 2.5rem;
+    width: 100%;
+    max-width: 650px;
+    transition: box-shadow 0.3s;
+}
+
+.company-sectors:hover {
+    box-shadow: 0 0 48px #00ffe7cc, 0 4px 16px #1a2980;
+}
+
+.company-sectors h2 {
+    color: #00ffe7;
+    font-size: 2rem;
+    margin-bottom: 1.2rem;
+    text-shadow: 0 0 8px #00ffe7;
+}
+
+.company-sectors ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.company-sectors li {
+    margin-bottom: 1.1rem;
+    font-size: 1.15rem;
+    position: relative;
+    padding-left: 2rem;
+}
+
+.company-sectors li::before {
+    content: '';
+    position: absolute;
+    left: 0.3rem;
+    top: 0.7rem;
+    width: 1rem;
+    height: 1rem;
+    border-radius: 50%;
+    background: radial-gradient(circle, #00ffe7 60%, #1a2980 100%);
+    box-shadow: 0 0 8px #00ffe7;
+}
+
+main p {
+    font-size: 1.18rem;
+    color: #e0eafc;
+    margin-bottom: 1.2rem;
+    text-shadow: 0 1px 4px #1a2980;
+}
+
+.contact-button {
+    display: inline-block;
+    background: linear-gradient(90deg, #00ffe7 0%, #1a2980 100%);
+    color: #0f2027;
+    font-weight: bold;
+    padding: 1.1rem 2.8rem;
+    border-radius: 50px;
+    text-decoration: none;
+    box-shadow: 0 6px 32px #00ffe755, 0 2px 8px #1a2980;
+    font-size: 1.15rem;
+    transition: transform 0.2s, box-shadow 0.2s, background 0.3s, color 0.3s;
+    margin-top: 1.7rem;
+    letter-spacing: 2px;
+    border: 2px solid #00ffe7;
+    text-shadow: 0 0 8px #00ffe7;
+}
+
+.contact-button:hover {
+    transform: scale(1.08) translateY(-4px);
+    box-shadow: 0 0 48px #00ffe7cc, 0 8px 24px #1a2980;
+    background: linear-gradient(90deg, #1a2980 0%, #00ffe7 100%);
+    color: #fff;
+}
+
+footer {
+    background: rgba(20, 30, 48, 0.95);
+    color: #00ffe7;
+    text-align: center;
+    padding: 1.2rem 0;
+    font-size: 1.05rem;
+    box-shadow: 0 -2px 16px #00ffe733;
+    border-top: 2px solid #00ffe7;
+    letter-spacing: 1.5px;
+}
+
+.download-section {
+    background: rgba(44, 83, 100, 0.85);
+    border: 1.5px solid #00ffe7;
+    border-radius: 18px;
+    box-shadow: 0 0 24px #00ffe755, 0 2px 8px #1a2980;
+    padding: 2rem 2.5rem;
+    margin-bottom: 2.5rem;
+    width: 100%;
+    max-width: 650px;
+    margin-top: 2rem;
+    transition: box-shadow 0.3s;
+    text-align: center;
+}
+
+.download-section h2 {
+    color: #00ffe7;
+    font-size: 1.7rem;
+    margin-bottom: 1.2rem;
+    text-shadow: 0 0 8px #00ffe7;
+}
+
+.download-section ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.download-section li {
+    display: inline-block;
+    margin: 0 1rem 1rem 0;
+}
+
+.download-button {
+    display: inline-block;
+    background: linear-gradient(90deg, #1a2980 0%, #00ffe7 100%);
+    color: #0f2027;
+    font-weight: bold;
+    padding: 1rem 2.2rem;
+    border-radius: 50px;
+    text-decoration: none;
+    box-shadow: 0 6px 32px #00ffe755, 0 2px 8px #1a2980;
+    font-size: 1.05rem;
+    transition: transform 0.2s, box-shadow 0.2s, background 0.3s, color 0.3s;
+    border: 2px solid #00ffe7;
+    text-shadow: 0 0 8px #00ffe7;
+}
+
+.download-button:hover {
+    transform: scale(1.08) translateY(-4px);
+    box-shadow: 0 0 48px #00ffe7cc, 0 8px 24px #1a2980;
+    background: linear-gradient(90deg, #00ffe7 0%, #1a2980 100%);
+    color: #fff;
+}
